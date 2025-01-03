@@ -1,0 +1,11 @@
+[package]
+name = "raddyspring"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+macroquad = "*"
+nalgebra = "*"
+faer = "*"
+faer-sparse = "*"
+raddy = { path = "../raddy" }
