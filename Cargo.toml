@@ -8,4 +8,5 @@ macroquad = "*"
 nalgebra = "*"
 faer = "*"
 faer-sparse = "*"
-raddy-ad = "0.0.0-alpha2"
+# replace with the newest version
+raddy-ad = { path = "../raddy" }

@@ -4,7 +4,7 @@ use macroquad::{
     color::BLACK,
     window::{clear_background, next_frame, Conf},
 };
-use raddy::{make, sparse::objective::Objective, types::advec, Ad};
+use raddy::{make::val, sparse::objective::Objective, types::advec, Ad};
 use std::time::{Duration, Instant};
 
 extern crate nalgebra as na;
@@ -30,7 +30,7 @@ impl Objective<4> for SpringEnergy {
         let p2 = advec::<4, 2>::new(variables[2].clone(), variables[3].clone());
 
         let len = (p2 - p1).norm();
-        let e = make::val(0.5 * self.k) * (len - make::val(*restlen)).powi(2);
+        let e = val::scalar(0.5 * self.k) * (len - val::scalar(*restlen)).powi(2);
 
         e
     }
