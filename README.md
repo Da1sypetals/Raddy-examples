@@ -1,3 +1,4 @@
 # Raddy example
 Implicit euler mass spring simulation.
-![alt text](diffsim.png)
+![showcase](spring.gif)
+![pipeline](diffsim.png)
